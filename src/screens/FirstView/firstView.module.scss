@@ -1,0 +1,79 @@
+.container {
+  h1 {
+    padding: 20px 0 0 40px;
+  }
+  background-color: white;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  .startScreen {
+    box-shadow: 2px 4px 20px rgb(34 90 89 / 20%);
+    margin: 40px;
+    border-radius: 10px;
+    .contentBlock {
+      display: flex;
+      flex-direction: row;
+
+      .leftBlock {
+        padding: 20px;
+        width: 50%;
+        max-height: 400px;
+        overflow: hidden;
+        padding-bottom: 10px;
+        .title {
+          font-size: 20px;
+          font-weight: 800px;
+        }
+        .contentLeftBlock {
+          margin: 5px 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 18;
+          -webkit-box-orient: vertical;
+          margin-bottom: 10px;
+        }
+      }
+      .rightBlock {
+        width: 50%;
+        .figure {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          background: transparent center no-repeat;
+          background-size: cover;
+          background-image: url(https://p16-va-tiktok.ibyteimg.com/obj/musically-maliva-obj/13fefb5b6fc913bce285cf4ee6e0611d);
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100% !important;
+    .startScreen {
+      .contentBlock {
+        flex-direction: column-reverse;
+        .rightBlock,
+        .leftBlock {
+          width: 100%;
+        }
+        .rightBlock {
+          .figure {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 0px;
+          }
+        }
+      }
+    }
+  }
+}

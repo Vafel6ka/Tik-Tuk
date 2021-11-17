@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border-bottom: 1px solid rgb(114, 112, 112);
+  height: 70px;
+  .content {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0 0 30px;
+    .options {
+      padding-top: 8px;
+      margin-right: 30px;
+      & :hover {
+        cursor: pointer;
+      }
+    }
+    .icon {
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      img {
+        height: 100%;
+      }
+    }
+
+    .title {
+      font-size: 30px;
+      font-family: 'sofiapro-regular', sans-serif;
+      font-weight: 900;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}

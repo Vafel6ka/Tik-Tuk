@@ -1,0 +1,51 @@
+.container {
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  margin-top: 20px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .currentUserBlock {
+    width: 80px;
+    border-radius: 40px;
+    background-color: purple;
+  }
+  .currentUserBlock,
+  .news,
+  .users {
+    margin-left: 150px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .users {
+    color: grey;
+  }
+  .currentUser {
+    height: 80px;
+    border-radius: 40px;
+  }
+  span:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(99, 95, 95);
+    color: rgb(99, 95, 95);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    -webkit-transition: height 1s ease-in-out;
+    -moz-transition: height 1s ease-in-out;
+    -o-transition: height 1s ease-in-out;
+    transition: height 1s ease-out;
+    .currentUserBlock,
+    .news,
+    .users {
+      margin-left: 30px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.container {
+  background-color: white;
+  min-height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  .wrapper {
+    width: 580px;
+    box-shadow: 2px 4px 20px rgb(34 90 89 / 20%);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    .titleBlock {
+      display: flex;
+      flex-direction: row;
+      .ava {
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+        }
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        background-color: burlywood;
+      }
+      .nickName {
+        margin-left: 20px;
+        font-size: larger;
+        font-weight: bold;
+      }
+    }
+    .userInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    .mediaContent {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .mediaItem {
+        width: 160px;
+        height: 250px;
+        background-color: chocolate;
+        margin: 10px;
+        position: relative;
+        z-index: 1;
+        .caretRightOutlined {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          z-index: 5;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .mediaCount {
+          z-index: 5;
+          position: absolute;
+          bottom: 20px;
+          left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .wrapper {
+    width: 500px !important;
+    .mediaContent {
+      .mediaItem {
+        width: 210px !important;
+        background-color: lawngreen;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .wrapper {
+    width: 90% !important;
+    .mediaContent {
+      justify-content: center;
+      .mediaItem {
+        width: 90% !important;
+      }
+    }
+  }
+}
